@@ -1,12 +1,12 @@
 package Tk::SearchDialog;
-my $RCSRevKey = '$Revision: 0.43 $';
+my $RCSRevKey = '$Revision: 0.44 $';
 $RCSRevKey =~ /Revision: (.*?) /;
-$VERSION=0.43;
+$VERSION=0.44;
 use vars qw( $VERSION );
 
 =head1 NAME
 
-  SearchDialog.pm--Search Dialog Widget for Perl/Tk Text.
+  SearchDialog.pm - Search Dialog Widget for Perl/Tk Text.
 
 =head1 SYNOPSIS
 
@@ -17,9 +17,8 @@ use vars qw( $VERSION );
 
 =head1 DESCRIPTION
 
-The Tk::SearchDialog widget opens a dialog window that allows
-entry of search and/or replacement text, and the selection
-of search options.
+A Tk::SearchDialog widget allows entry of search and/or replacement
+text, and the selection of search options.
 
 The SearchDialog returns a list of ($option, $value) pairs (see below)
 when the user clicks the "Search!" button, and undef if the user
@@ -27,10 +26,9 @@ clicks the "Cancel" button.
 
 =head1 SEARCH OPTIONS
 
-The SearchDialog returns a list with the following search
-specifications.  All specifications are string scalar values.  The
-'-option*' options are set to '1' when selected, and '0' or undef if
-not selected. Labels and titles are read-only.
+All options are string scalar values.  The "-option*" options are set
+to "1" when selected, and "0" or undef if not selected. Labels and
+titles are read-only.
 
 =head2 -searchstring 
 
@@ -71,7 +69,7 @@ have some entry validation.
 
 =head1 VERSION INFORMATION
 
-$Id: SearchDialog.pm,v 0.43 2002/08/22 16:34:50 kiesling Exp $
+$Id: SearchDialog.pm,v 0.44 2002/08/30 14:19:11 kiesling Exp $
 
 Author: Robert Allan Kiesling <rkiesling@earthlink.net>
 

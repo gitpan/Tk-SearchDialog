@@ -1,5 +1,5 @@
 NAME
-      SearchDialog.pm--Search Dialog Widget for Perl/Tk Text.
+      SearchDialog.pm - Search Dialog Widget for Perl/Tk Text.
 
 SYNOPSIS
       use Tk::SearchDialog;
@@ -8,18 +8,17 @@ SYNOPSIS
       my @searchoptions = $dialog -> Show;
 
 DESCRIPTION
-    The Tk::SearchDialog widget pops up a dialog box that allows entry of
-    search and/or replacement text, and search options.
+    A Tk::SearchDialog widget allows entry of search and/or replacement
+    text, and the selection of search options.
 
     The SearchDialog returns a list of ($option, $value) pairs (see below)
     when the user clicks the "Search!" button, and undef if the user clicks
     the "Cancel" button.
 
 SEARCH OPTIONS
-    The SearchDialog returns a list with the following search
-    specifications. All specifications are string scalar values. The
-    '-option*' options are set to '1' when selected, and '0' or undef if not
-    selected. Labels and titles are read-only.
+    All options are string scalar values. The "-option*" options are set to
+    "1" when selected, and "0" or undef if not selected. Labels and titles
+    are read-only.
 
   -searchstring
 
@@ -58,7 +57,7 @@ BUGS
     some entry validation.
 
 VERSION INFORMATION
-    $Id: SearchDialog.pm,v 0.41 2000/11/30 23:09:37 kiesling Exp $
+    $Id: SearchDialog.pm,v 0.44 2002/08/30 14:19:11 kiesling Exp $
 
-    Author: rkiesling@mainmatter.com <Robert Kiesling>
+    Author: Robert Allan Kiesling <rkiesling@earthlink.net>
 
