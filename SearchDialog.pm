@@ -1,4 +1,6 @@
 package Tk::SearchDialog;
+# Temp version for CPAN.
+$VERSION=0.41;
 my $RCSRevKey = '$Revision: 0.41 $';
 $RCSRevKey =~ /Revision: (.*?) /;
 $VERSION=$1;
