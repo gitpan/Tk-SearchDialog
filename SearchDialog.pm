@@ -1,9 +1,7 @@
 package Tk::SearchDialog;
-# Temp version for CPAN.
-$VERSION=0.41;
-my $RCSRevKey = '$Revision: 0.41 $';
+my $RCSRevKey = '$Revision: 0.43 $';
 $RCSRevKey =~ /Revision: (.*?) /;
-$VERSION=$1;
+$VERSION=0.43;
 use vars qw( $VERSION );
 
 =head1 NAME
@@ -19,8 +17,9 @@ use vars qw( $VERSION );
 
 =head1 DESCRIPTION
 
-The Tk::SearchDialog widget pops up a dialog box that allows
-entry of search and/or replacement text, and search options.
+The Tk::SearchDialog widget opens a dialog window that allows
+entry of search and/or replacement text, and the selection
+of search options.
 
 The SearchDialog returns a list of ($option, $value) pairs (see below)
 when the user clicks the "Search!" button, and undef if the user
@@ -72,9 +71,9 @@ have some entry validation.
 
 =head1 VERSION INFORMATION
 
-$Id: SearchDialog.pm,v 0.41 2000/11/30 23:09:37 kiesling Exp $
+$Id: SearchDialog.pm,v 0.43 2002/08/22 16:34:50 kiesling Exp $
 
-Author: rkiesling@mainmatter.com <Robert Kiesling>
+Author: Robert Allan Kiesling <rkiesling@earthlink.net>
 
 =cut 
 
